@@ -5,15 +5,19 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Albums</title>
    
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+   <!--- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
     
     <style>
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        table{
+            width: 100%;
+        }
         table, td{
             border: 1 px solid black;
+            
         }
         thead{
             background-color: black;
@@ -22,6 +26,19 @@
         tbody > tr:nth-child(odd){
             background-color: gray;
         }
+        .ancho{
+            width: 10%;
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+            
+        }
+        img:hover{
+            opacity: 0.8;
+        } 
+        
     </style>
 </head>
 <body>
@@ -29,10 +46,10 @@
     <table cellspacing=0 cellpadding=4 border="1">
         <thead>
             <tr>
-                <th>Year</th>
+                <th class="ancho">Year</th>
                 <th>Band</th>
                 <th>Title</th>
-                <th>Cover</th>
+                <th class="ancho">Cover</th>
             </tr>
         </thead>
         <tbody>
@@ -40,25 +57,37 @@
                 <td><a href="https://es.wikipedia.org/wiki/1973">1973</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Led_Zeppelin">Led Zepellin</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Houses_of_the_Holy">Houses of the Holy</a></td>
-                <td><img src="./img/hh.jpg" height="100px"></td>
+                <td><img src="./img/hh.jpg"></td>
             </tr>
             <tr>
                 <td><a href="https://es.wikipedia.org/wiki/1990">1990</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Megadeth">Megadeth</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Rust_in_Peace">Rust in Peace</a></td>
-                <td><img src="./img/rp.jpg" height="100px"></td>
+                <td><img src="./img/rp.jpg" ></td>
             </tr>
             <tr>
                 <td><a href="https://es.wikipedia.org/wiki/1997">1997</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Symphony_X">Symphony X</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/The_Divine_Wings_of_Tragedy">The Divine Wings of Tragedy</a></td>
-                <td><img src="./img/dw.jpg"height="100px"></td>
+                <td><img src="./img/dw.jpg"></td>
             </tr>
             <tr>
                 <td><a href="https://es.wikipedia.org/wiki/1973">1973</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/Pink_Floyd">Pink Floyd</a></td>
                 <td><a href="https://es.wikipedia.org/wiki/The_Dark_Side_of_the_Moon">The Dark Side of the Moon</a></td>
-                <td><img src="./img/pf.png" height="100px" width="100px"></td>
+                <td><img src="./img/pf.png" ></td>
+            </tr>
+            <tr>
+                <td><a href="https://es.wikipedia.org/wiki/1972">1972</a></td>
+                <td><a href="https://es.wikipedia.org/wiki/Pescado_Rabioso">Pescado Rabioso</a></td>
+                <td><a href="https://es.wikipedia.org/wiki/Desatorment%C3%A1ndonos">Desatormentandonos</a></td>
+                <td><img src="./img/de.jpg" ></td>
+            </tr>
+            <tr>
+                <td><a href="https://es.wikipedia.org/wiki/1973">1973</a></td>
+                <td><a href="https://es.wikipedia.org/wiki/Pescado_Rabioso">Pescado Rabioso</a></td>
+                <td><a href="https://es.wikipedia.org/wiki/Artaud_(%C3%A1lbum)">Artaud</a></td>
+                <td><img src="./img/ar.jpg" ></td>
             </tr>
         </tbody>
 
